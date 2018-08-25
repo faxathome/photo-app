@@ -9,7 +9,7 @@ Rails.application.configure do
   # Do not eager load code on boot.
   config.eager_load = false
   # Setup the mailer config
-  config.action_mailer.delivery_method = :development
+  config.action_mailer.delivery_method = :test
   config.action_mailer.perform_deliveries = true
   config.action_mailer.smtp_settings = {
     :user_name => ENV['SENDGRID_USERNAME'],
